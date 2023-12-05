@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <a href="admin.php" class="login-btn">登录</a>
+    <div class="container">
+        <div class="center-section">
+            <h1>留言板</h1>
+            <p>欢迎来到我们的留言板！请您遵循以下准则和注意事项：</p>
+            <ul>
+                <li>尊重他人，避免恶意、侮辱性或不适当的语言。</li>
+                <li>保护隐私，不要透露个人隐私信息。</li>
+                <li>确保留言与当前主题相关，保持留言板整洁。</li>
+                <li>禁止发布广告内容。</li>
+            </ul>
+            <p class="bold">感谢您的合作，让我们共同维护一个友善、开放的留言环境！</p>
+
+            <div class="box">
+                <form id="message-form">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" placeholder="请输入您的姓名" required>
+                    <label for="message">留言:</label>
+                    <textarea id="message" placeholder="请输入留言内容" required></textarea>
+                    <button type="submit">提交留言</button>
+                </form>
+            </div>
+            <div id="messages-container"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 🍊Orange 保留所有权利</p>
+        <p>防侵权声明：本站的所有内容均受到知识产权法的保护</p>
+        <p>版本号：5.0.0</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
